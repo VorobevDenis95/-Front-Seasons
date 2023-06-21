@@ -1,0 +1,225 @@
+@import url(//db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar);
+@import url(//db.onlinewebfonts.com/c/791b34a71c48acc600f240e9fdb57fb6?family=TT+Commons);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColor: #000000;
+  --redColor: #f51b1b;
+  --fontColor: #ffffff;
+  --grayColor: rgba(255, 255, 255, 0.5);
+}
+
+
+
+@media (min-width: 360px) {
+  body {
+    padding: 20px;
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    font-family: TT Commons;
+    font-size: 16px;
+    }
+  .header {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  
+
+  .logo_header {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  .pimp_header {
+    margin-right: 10px;
+  }
+
+  .photo_student {
+    width: 100%;
+  }
+
+  .contacts {
+    padding: 20px;
+    position: relative;
+    margin-top: -100px;
+    min-height: 288px;
+    background-color: var(--redColor);
+    border: 1px solid var(--redColor);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .visually_pimp_contacts {
+    position: absolute;
+    top: -19px;
+    left: 41%;
+  }
+
+  .contacts_container {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .name_contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .name_contacts {
+    font-family: Redcollar;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .nav_contacts_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    justify-content: space-between;
+  }
+
+  .link_contacts {
+    text-decoration: none;
+    color: var(--fontColor);
+    margin-left: 10px;
+  }
+
+  .aboutMe {
+    margin-top: 20px;
+  }
+
+  .achievements {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid var(--fontColor);
+    border-block-start: none;
+  }
+
+  .achievements ::before,
+  .achievements ::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    border-block-start: 1px solid;
+    block-size: 20px;
+  }
+
+  .achievements ::before {
+    inline-size: 50%;
+    inset-inline-start: 0;
+    border-top-right-radius: 20px;
+  }
+
+  .achievements ::after {
+    inline-size: 50%;
+    inset-inline-end: 0;
+    border-top-left-radius: 20px;
+  }
+
+  .achievements_containter {
+    border-bottom: 1px solid var(--grayColor);
+  }
+
+  .achievements_containter:nth-of-type(3) {
+    border-bottom: none;
+  }
+
+  .achievements_title_container {
+    font-family: Redcollar;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .achievements_item_containter {
+    margin-top: 10px;
+  }
+
+  .achievements_item_text-containter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievements_item_containter_text {
+    color: var(--grayColor);
+  }
+
+  .achievements_skills {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .header {
+    justify-content: flex-end;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .information {
+    min-width: 300px;
+    width: 20%;
+    padding: 20px;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .aboutMe_text {
+    padding-right: 30%;
+  }
+
+  .photo_student {
+    max-width: 322px;
+  }
+
+  .contacts {
+  }
+
+  .achievements {
+    min-height: 549px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .achievements_containter {
+    display: flex;
+    min-height: 150px;
+  }
+
+  .achievements_title_container {
+    margin-top: 0px;
+    width: 200px;
+  }
+
+  .achievements ::before {
+    inline-size: 9%;
+    inset-inline-start: 0;
+    border-top-right-radius: 20px;
+  }
+
+  .achievements ::after {
+    inline-size: 91%;
+    inset-inline-end: 0;
+    border-top-left-radius: 20px;
+  }
+
+  .achievements_skills {
+    min-width: 300px;
+  }
+}
