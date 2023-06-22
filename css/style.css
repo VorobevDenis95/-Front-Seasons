@@ -174,7 +174,8 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 900px) {
+
   .header {
     justify-content: flex-end;
   }
@@ -203,10 +204,11 @@
 
   .contacts {
     max-width: 322px;
+    min-height: 400px;
   }
 
   .achievements {
-    min-height: 549px;
+    min-height: 662px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -217,7 +219,12 @@
     min-height: 150px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   .achievements_title_container {
+    font-size: 16px;
     margin-top: 0px;
     width: 200px;
   }
@@ -235,6 +242,6 @@
   }
 
   .achievements_skills {
-    min-width: 300px;
+    min-width: 270px;
   }
 }
